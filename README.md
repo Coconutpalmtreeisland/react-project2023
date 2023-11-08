@@ -38,10 +38,25 @@ React는 상당히 큰 커뮤니티와 생태계를 가지고 있으며, 추가�
     `git config core.autocrlf true // 해당 프로젝트에만 적용`
 </details>
 
-### GSAP
+## GSAP
 GSAP( GreenSock Animation Platform)은 웹 애니메이션을 개발하는 데 사용되는 강력하고 유연한 JavaScript 라이브러리입니다. GSAP은 웹 개발자들이 웹사이트 또는 웹 애플리케이션에서 복잡한 애니메이션 및 상호작용 요소를 구현하고 제어하기 위한 다양한 도구와 기능을 제공합니다.
     
 GSAP은 웹 애니메이션의 높은 품질과 성능을 제공하기 위한 강력한 도구로 많은 웹 개발자와 디자이너에게 사랑받고 있으며, 웹사이트의 시각적 요소를 향상시키고 사용자 경험을 개선하는 데 사용됩니다.
 
-### lenis
+## lenis
 lenis.js는 JavaScript로 작성된 오픈 소스 웹 프레임워크입니다. 이 프레임워크는 웹 애플리케이션 및 API를 개발하기 위해 사용됩니다. lenis.js는 경량화되고 빠른 속도로 동작하며, 간단한 문법과 구조를 제공하여 개발자가 쉽게 웹 애플리케이션을 구축할 수 있도록 도와줍니다.
+
+## firebase
+Firebase는 Google이 제공하는 클라우드 기반 개발 플랫폼으로, 모바일 및 웹 애플리케이션 개발을 간단하게 만들어주는 다양한 도구와 서비스를 제공합니다. Firebase를 사용하면 개발자는 인프라 관리나 서버 설정에 대해 걱정할 필요 없이 애플리케이션을 빠르게 개발하고 배포할 수 있습니다.
+
+### firebase 설치
+1. build 생성 `npm run build`
+2. firebase 사이트에서 로그인 후 프로젝트 추가
+3. Hosting 메뉴에서 시작하기 클릭
+4. 프로젝트 이름 설정(=웹페이지 url)
+5. 터미널(명령 프롬포트)에 react-project 파일에 firebase 설치 `npm install -g firebase-tools`
+6. 터미널에서 Google에 로그인 `firebase login` yes 후 구글 아이디로 로그인
+7. 터미널에서 프로젝트 시작 `firebase init` yes 후 `Hosting: Configure files for Firebase Hosting and (optionally) set up GitHub Action deploys` 스페이스바로 선택 후 엔터
+8. `Use an existing project` 선택 후 배포할 폴더 선택 `coconut-react-project (coconut-react-project)`
+9. public 파일 지정 `build` 선택 후 나오는 선택지들 추천 선택인 N 선택
+10. `Firebase initialization complete!`가 나오면 터미널에서 웹 앱 배포 `firebase deploy`
