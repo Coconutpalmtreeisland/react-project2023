@@ -165,7 +165,7 @@
     }
 
     .intro__text .text div:nth-child(2) {
-        filter: drop-shadow(3px 2px 1px #f87e66);
+        filter: drop-shadow(3px 2px 1px var(--subBg300));
     }
 
     .intro__text:hover .text {

@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+
+import { skillText } from '../constants';
 
 const Skill = () => {
     return (
@@ -8,20 +10,13 @@ const Skill = () => {
                     challenge <em>나의 도전</em>
                 </h2>
                 <div className="skill__desc">
-                    <span>1.</span>
-                    <h3>언제나 열의를 가지고 열심히 하는 개발자</h3>
-                    <p>무엇을 하든지 최선을 다하면 좋은 결과가 따라온다고 생각합니다. 낯설더라도 하나씩 차근차근 단계를 밟아가면 언제나 좋은 결과가 따라왔습니다. 혹여나 실패하더라도 그 경험이 미래의 경험의
-                        밑바탕이 되어 더 좋은 결과를 가져왔습니다.</p>
-
-                    <span>2.</span>
-                    <h3>언제나 열의를 가지고 열심히 하는 개발자</h3>
-                    <p>무엇을 하든지 최선을 다하면 좋은 결과가 따라온다고 생각합니다. 낯설더라도 하나씩 차근차근 단계를 밟아가면 언제나 좋은 결과가 따라왔습니다. 혹여나 실패하더라도 그 경험이 미래의 경험의
-                        밑바탕이 되어 더 좋은 결과를 가져왔습니다.</p>
-
-                    <span>3.</span>
-                    <h3>언제나 열의를 가지고 열심히 하는 개발자</h3>
-                    <p>무엇을 하든지 최선을 다하면 좋은 결과가 따라온다고 생각합니다. 낯설더라도 하나씩 차근차근 단계를 밟아가면 언제나 좋은 결과가 따라왔습니다. 혹여나 실패하더라도 그 경험이 미래의 경험의
-                        밑바탕이 되어 더 좋은 결과를 가져왔습니다.</p>
+                    {skillText.map((skill, key) => (
+                        <div key={key}>
+                            <span>{key + 1}.</span>
+                            <h3>{skill.title}</h3>
+                            <p>{skill.desc}</p>
+                        </div>
+                    ))}
                 </div>
             </div>
         </section>
