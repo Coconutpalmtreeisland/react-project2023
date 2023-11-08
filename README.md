@@ -55,8 +55,8 @@ Firebase는 Google이 제공하는 클라우드 기반 개발 플랫폼으로, �
 3. Hosting 메뉴에서 시작하기 클릭
 4. 프로젝트 이름 설정(=웹페이지 url)
 5. 터미널(명령 프롬포트)에 react-project 파일에 firebase 설치 `npm install -g firebase-tools`
-6. 터미널에서 Google에 로그인 `firebase login` yes 후 구글 아이디로 로그인
-7. 터미널에서 프로젝트 시작 `firebase init` yes 후 `Hosting: Configure files for Firebase Hosting and (optionally) set up GitHub Action deploys` 스페이스바로 선택 후 엔터
-8. `Use an existing project` 선택 후 배포할 폴더 선택 `coconut-react-project (coconut-react-project)`
-9. public 파일 지정 `build` 선택 후 나오는 선택지들 추천 선택인 N 선택
+6. 터미널에서 Google에 로그인 `firebase login` -> yes 선택 -> 구글 아이디로 로그인
+7. 터미널에서 프로젝트 시작 `firebase init` -> yes 선택 -> `Hosting: Configure files for Firebase Hosting and (optionally) set up GitHub Action deploys` 스페이스바로 선택 -> 엔터
+8. `Use an existing project` 선택 -> 배포할 폴더인 `coconut-react-project (coconut-react-project)` 선택
+9. public 파일 지정 `build` 선택 -> 선택지들 추천 선택인 N 선택
 10. `Firebase initialization complete!`가 나오면 터미널에서 웹 앱 배포 `firebase deploy`
